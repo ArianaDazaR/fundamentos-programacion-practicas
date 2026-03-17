@@ -7,13 +7,13 @@ int main () {
     printf("----Sistema de Datos----\n");
 
     printf("Ingrese su nombre:");
-    scanf ("%s", &nombre);
+    scanf (" %[^\n]", &nombre);
 
     printf("Ingrese su edad:");
     scanf ("%d", &edad);
 
     printf("Ingrese su carrera:");
-    scanf ("%s", &carrera);
+    scanf (" %[^\n]", &carrera);
 
     printf("Ingrese el semestre que cursa:");
     scanf ("%d", &semestre);
