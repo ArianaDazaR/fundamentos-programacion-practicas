@@ -10,16 +10,12 @@ int main () {
     printf ("Ej: enero=01, febrero=02, marzo=03...\n");
     printf ("*Asume meses de 30 dias.\n");
     printf ("\nFecha inicial\n");
-    printf ("DD:");
-    scanf ("%d", &dia1);
-    printf ("MM:");
-    scanf ("%d", &mes1);
+    printf ("DD MM:");
+    scanf ("%d %d", &dia1, &mes1);
 
     printf ("\nFecha final\n");
-    printf ("DD:");
-    scanf ("%d", &dia2);
-    printf ("MM:");
-    scanf ("%d", &mes2);
+    printf ("DD MM:");
+    scanf ("%d %d", &dia2, &mes2);
 
     if (1<dia1 && dia1<30 && 1<dia2 && dia2<30 && 1<mes1 && mes1<12 && 1<mes2 && mes2<12 ){
         if (((mes2*30)+dia2)<((mes1*30)+dia1)) {
