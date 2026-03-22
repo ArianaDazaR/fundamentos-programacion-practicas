@@ -21,33 +21,28 @@ int main () {
                 totaltarifa=kwh*0.3;
                 printf ("\nUsted pertenece a la Categoria Basica\n");
                 printf ("\nTotal a pagar segun tarifa: %.2f bolivianos\n", totaltarifa);
-                totalpagar = totaltarifa+servicio;
-                printf ("Total a pagar + cargo por servicio: %.2f bolivianos\n", totalpagar);
             } else {
                 if (100<kwh && kwh<=300) {
                     totaltarifa=kwh*0.5;
                     printf ("\nUsted pertenece a la Categoria Media\n");
                     printf ("\nTotal a pagar segun tarifa: %.2f bolivianos\n", totaltarifa);
-                    totalpagar = totaltarifa+servicio;
-                    printf ("Total a pagar + cargo por servicio: %.2f bolivianos\n", totalpagar);
                     } else {
                         if (300<kwh && kwh<=600) {
                         totaltarifa=kwh*0.75;
                         printf ("\nUsted pertenece a la Categoria Alta\n");
                         printf ("\nTotal a pagar segun tarifa: %.2f bolivianos\n", totaltarifa);
-                        totalpagar = totaltarifa+servicio;
-                        printf ("Total a pagar + cargo por servicio: %.2f bolivianos\n", totalpagar);
                         } else {
                             totaltarifa=kwh*1.1;
                             printf ("\nUsted pertenece a la Categoria Industrial\n");
                             printf ("\nTotal a pagar segun tarifa: %.2f bolivianos\n", totaltarifa);
-                            totalpagar = totaltarifa+servicio;
-                            printf ("Total a pagar + cargo por servicio: %.2f bolivianos\n", totalpagar);
                     }
                 }
             }
         }
     }
+
+    totalpagar = totaltarifa+servicio;
+    printf ("Total a pagar + cargo fijo por servicio: %.2f bolivianos\n", totalpagar);
 
 return 0;
 }
