@@ -2,7 +2,7 @@
 
 int main () {
 
-    int DD, MM, AA;
+    int DD, MM;
 
     printf ("Estacion del Año según Fecha (Hemisferio Sur)\n");
 
