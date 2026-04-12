@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 
 int main () {
@@ -6,16 +7,14 @@ int main () {
     int N, i;
     int suma=0;
 
-    cout << "Ingrese el valor de N:";
+    cout << "Ingrese un valor para N: ";
     cin >> N;
 
-    for (i=0; i<=N; i++){
-        if (i%2!=0) {
-            suma = suma + i;
-        }
+    for (i=1; i<=N; i++){
+        suma = suma + pow(i,2);
     }
 
-    cout << "\nLa suma de los numeros enteros impares entre 1 y " << N << " es " << suma << endl;
+    cout << "\nLa suma de los cuadrados de los numeros enteros entre 1 y " << N << " es " << suma << endl;
 
 return 0;
 }
