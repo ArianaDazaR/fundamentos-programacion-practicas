@@ -6,7 +6,7 @@ int main () {
 
     int n, i;
     float x;
-    int suma=0;
+    float suma=0;
 
     cout << "Ingrese un valor para x (x^n): ";
     cin >> x;
