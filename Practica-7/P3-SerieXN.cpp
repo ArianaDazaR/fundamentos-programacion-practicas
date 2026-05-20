@@ -1,15 +1,16 @@
 #include <iostream>
-#include <math.h>
+#include <cmath>
 #include <iomanip>
 using namespace std;
 
 void LeerDatos(int &n, int &x);
 float Serie(int n, int x);
-void MostrarSerieYResultado(int x, int n, int suma);
+void MostrarSerieYResultado(int x, int n, float suma);
 
 int main() {
     int n, x;
     LeerDatos(n, x);
+    float suma = Serie(n, x);
     MostrarSerieYResultado(x, n, suma);
     return 0;
 }
@@ -17,16 +18,8 @@ int main() {
 void LeerDatos(int &n, int &x) {
     cout << "Ingrese el valor de x (entero positivo): ";
     cin >> x;
-    while (x < 0) {
-        cout << "x debe ser positivo. Intente de nuevo: ";
-        cin >> x;
-    }
     cout << "Ingrese el valor de n (cantidad de terminos): ";
     cin >> n;
-    while (n < 0) {
-        cout << "n debe ser positivo. Intente de nuevo: ";
-        cin >> n;
-    }
 }
 
 float Serie(int n, int x) {
@@ -46,5 +39,5 @@ void MostrarSerieYResultado(int x, int n, float suma) {
         cout << x << "^" << i << "/" << i << "!";
         if (i < n) cout << " + ";
     }
-    cout << "= " << fixed << setprecision(2) << suma << endl;
+    cout << "\nResultado = " << fixed << setprecision(2) << suma << endl;
 }
