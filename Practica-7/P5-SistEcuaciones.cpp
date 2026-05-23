@@ -15,7 +15,7 @@ int main() {
         bool solucionUnica = Sistema(A, B, C, D, E, F, X, Y);
         MostrarSolucion(X, Y, solucionUnica);
 
-        cout << "\n¿Desea resolver otro sistema? (s/n): ";
+        cout << "\nDesea resolver otro sistema? (s/n): ";
         cin >> opcion;
     } while (opcion == 's' || opcion == 'S');
 
