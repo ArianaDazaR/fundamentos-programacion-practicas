@@ -6,7 +6,7 @@ int main() {
     int n;
     cout << "Cuantas palabras? ";
     cin >> n;
-    cin.ignore();  // limpiar el buffer del enter
+    cin.ignore();
 
     string frase = "";
     for (int i = 0; i < n; i++) {
